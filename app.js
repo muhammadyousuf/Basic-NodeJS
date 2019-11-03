@@ -20,8 +20,18 @@ console.log(name, " app file", sum);
 
 */
 
+/*
+-----Lesson three video four
 const validator = require("validator");
 
 console.log(validator.isEmail("muhammadyousuf@327gmail.com"));
 
 console.log(validator.isURL('https://www.facebook.com'))
+
+*/
+
+const chalk = require('chalk');
+
+console.log(chalk.green('Sucess'))
+
+console.log(chalk.white.bgRed.inverse.bold('Muhammad Yousuf'))
