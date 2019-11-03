@@ -1,0 +1,22 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadyousuf/Basic-NodeJS.git"
+  },
+  "author": "muhammad yousuf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadyousuf/Basic-NodeJS/issues"
+  },
+  "homepage": "https://github.com/muhammadyousuf/Basic-NodeJS#readme",
+  "dependencies": {
+    "validator": "^12.0.0"
+  }
+}
