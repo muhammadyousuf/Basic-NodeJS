@@ -30,8 +30,19 @@ console.log(validator.isURL('https://www.facebook.com'))
 
 */
 
+/*
+-----Lesson three video five
 const chalk = require('chalk');
 
 console.log(chalk.green('Sucess'))
 
 console.log(chalk.white.bgRed.inverse.bold('Muhammad Yousuf'))
+*/
+
+let command = process.argv[2];
+console.log(process.argv);
+if (command === "add") {
+  console.log("Adding New Notes");
+} else if (command === "remove") {
+  console.log("Remove Notes");
+}
