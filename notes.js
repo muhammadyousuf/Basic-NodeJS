@@ -5,7 +5,7 @@ let getNote = () => {
   return "Your Notes...";
 };
 
-const addNote = function(title, body) {
+const addNote = (title, body) => {
   const notes = loadNotes();
   const dupliicateNotes = notes.filter(notes => {
     return notes.title.toLowerCase() === title.toLowerCase();
