@@ -71,7 +71,7 @@ yargs.command({
       demandOption: true
     }
   },
-  handler: function(avrg) {
+  handler(avrg) {
     notes.addNote(avrg.title.toLowerCase(), avrg.body.toLowerCase());
   }
 });
@@ -86,7 +86,7 @@ yargs.command({
       demandOption: true
     }
   },
-  handler: function(avrg) {
+  handler(avrg) {
     notes.removeNote(avrg.title.toLowerCase());
   }
 });
@@ -94,7 +94,7 @@ yargs.command({
 yargs.command({
   command: "list",
   describe: "List all note",
-  handler: function() {
+  handler() {
     console.log("Listing a notes!");
   }
 });
@@ -102,7 +102,7 @@ yargs.command({
 yargs.command({
   command: "read",
   describe: "read a note",
-  handler: function() {
+  handler() {
     console.log("read a notes!");
   }
 });
