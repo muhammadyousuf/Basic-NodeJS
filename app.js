@@ -95,15 +95,22 @@ yargs.command({
   command: "list",
   describe: "List all note",
   handler() {
-    console.log("Listing a notes!");
+    notes.listNotes();
   }
 });
 
 yargs.command({
   command: "read",
   describe: "read a note",
-  handler() {
-    console.log("read a notes!");
+  builder: {
+    title: {
+      describe: "Note title",
+      type: "string",
+      demandOption: true
+    }
+  },
+  handler(avrg) {
+    notes.readNote(avrg.title.toLowerCase());
   }
 });
 yargs.parse();
