@@ -49,7 +49,7 @@ if (command === "add") {
   console.log("Remove Notes");
 }
 */
-
+const notes = require("./notes");
 const yargs = require("yargs");
 
 // Customize yargs version
@@ -72,9 +72,7 @@ yargs.command({
     }
   },
   handler: function(avrg) {
-    console.log("Adding a new note!");
-    console.log("My Title: " + avrg.title);
-    console.log("My Body: " + avrg.body);
+    notes.addNote(avrg.title.toLowerCase(), avrg.body.toLowerCase());
   }
 });
 
